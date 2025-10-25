@@ -11,7 +11,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer base {
+  /* Fondo global y color de texto por defecto */
+  body {
+    background-color: #221510;
+    color: #ffffff; /* texto blanco para legibilidad */
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.active {
+  color: #D44211;
+}
+
+.disabled {
+
+  color: #ffffff;
 }
