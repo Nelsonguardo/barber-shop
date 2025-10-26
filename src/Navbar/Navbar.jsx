@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import icon from '../assets/img/barba.png'
+import icon from '../assets/img/barba.webp'
 
 export const Navbar = () => {
 
@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
         <>
             <nav className="bg-[#221510] text-white">
-                <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="relative flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={icon} className="h-8 mr-3" alt="Logo Barber Shop" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Barber Shop</span>
@@ -31,26 +31,26 @@ export const Navbar = () => {
                         </svg>
                     </button> 
 
-                    <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
+                    <div className={`${isOpen ? 'absolute top-full left-0 w-full bg-[#221510] z-20' : 'hidden'} md:block md:w-auto md:static md:bg-transparent`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-transparent">
                             <li>
-                                <NavLink className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" aria-current="page" to="/home">Inicio</NavLink>
+                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" aria-current="page" to="/home">Inicio</NavLink>
                             </li>
                             <li>
-                                <NavLink className="block py-2 px-3 text-white rounded-sm md:bg-transparent  md:p-0" to="/services">Servicios</NavLink>
+                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent  md:p-0" to="/services">Servicios</NavLink>
                             </li>
                             <li>
-                                <NavLink className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/about">Sobre Mi</NavLink>
+                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/about">Sobre Mi</NavLink>
                             </li>
                             <li>
-                                <NavLink className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/contact">Contacto</NavLink>
+                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/contact">Contacto</NavLink>
                             </li>
                             <li>
                                 <button
                                     type="button"
                                     id="book-appointment"
                                     className="px-3 py-2 text-xs font-medium text-center text-white bg-[#D44211] hover:bg-[#bf3b0f] rounded-md transition-colors"
-                                    onClick={() => navigate('/book-appointment')}
+                                    onClick={() => { setIsOpen(false); navigate('/book-appointment'); }}
                                 >
                                     <span className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0">Reservar Cita</span>
                                 </button>

@@ -1,6 +1,6 @@
 import React from 'react'
-import barberImage2 from '../assets/img/barber-image2.png'
-import barberImage from '../assets/img/barber-image.png'
+import barberImage2 from '../assets/img/barber-image2.webp'
+import barberImage from '../assets/img/barber-image.webp'
 import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
