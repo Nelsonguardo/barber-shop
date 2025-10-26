@@ -15,7 +15,7 @@ export const Routers = () => {
 
             <Navbar />
 
-            <section className="mt-4 px-4">
+            <section className="">
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/home' element={<Home />} />
