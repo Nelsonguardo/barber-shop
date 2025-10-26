@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "categoria": "Cortes de Cabello",
+    "servicios": [
+      {
+        "id": 1,
+        "nombre": "Corte Clásico",
+        "descripcion": "Un corte atemporal que nunca pasa de moda.",
+        "precio": 25
+      },
+      {
+        "id": 2,
+        "nombre": "Corte Moderno",
+        "descripcion": "Estilos contemporáneos para un look actualizado.",
+        "precio": 30
+      },
+      {
+        "id": 3,
+        "nombre": "Corte con Diseño",
+        "descripcion": "Añade un toque personal con diseños creativos.",
+        "precio": 35
+      },
+      {
+        "id": 4,
+        "nombre": "Corte para Niños",
+        "descripcion": "Cortes seguros y divertidos para los más pequeños.",
+        "precio": 20
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "categoria": "Afeitado y Cuidado de Barba",
+    "servicios": [
+      {
+        "id": 1,
+        "nombre": "Afeitado Clásico",
+        "descripcion": "Un afeitado suave y apurado para una piel impecable.",
+        "precio": 20
+      },
+      {
+        "id": 2,
+        "nombre": "Recorte de Barba",
+        "descripcion": "Mantenimiento y forma para tu barba.",
+        "precio": 15
+      },
+      {
+        "id": 3,
+        "nombre": "Afeitado con Toalla Caliente",
+        "descripcion": "Una experiencia relajante con toallas calientes.",
+        "precio": 25
+      },
+      {
+        "id": 4,
+        "nombre": "Diseño de Barba",
+        "descripcion": "Estilos personalizados para tu barba.",
+        "precio": 20
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "categoria": "Tratamientos Adicionales",
+    "servicios": [
+      {
+        "id": 1,
+        "nombre": "Coloración",
+        "descripcion": "Cambia tu look con una coloración profesional.",
+        "precio": 50
+      },
+      {
+        "id": 2,
+        "nombre": "Tratamiento Capilar",
+        "descripcion": "Nutrición intensiva para un cabello saludable.",
+        "precio": 40
+      },
+      {
+        "id": 3,
+        "nombre": "Mascarilla Facial",
+        "descripcion": "Refresca y revitaliza tu piel.",
+        "precio": 25
+      },
+      {
+        "id": 4,
+        "nombre": "Masaje Capilar",
+        "descripcion": "Relajación y bienestar para tu cuero cabelludo.",
+        "precio": 20
+      }
+    ]
+  }
+]
