@@ -48,38 +48,44 @@ export const Home = () => {
 
                     </h1>
                     <div className='grid grid-cols-2 md:grid-cols-6 gap-4 py-8'>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                        <div className='overflow-hidden rounded-lg'>
+                            <img
+                                className="w-full h-auto max-w-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
@@ -96,16 +102,16 @@ export const Home = () => {
 
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-8 max-w-6xl mx-auto">
-                        <div>
+                        <div className='overflow-hidden rounded-lg'>
                             <img
-                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg"
+                                className="w-full h-48 md:h-64 lg:h-80 object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage2}
                                 alt="Barber Shop"
                             />
                         </div>
-                        <div>
+                        <div className='overflow-hidden rounded-lg'>
                             <img
-                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg"
+                                className="w-full h-48 md:h-64 lg:h-80 object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
                                 src={barberImage2}
                                 alt="Barber Shop"
                             />
