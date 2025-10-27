@@ -6,7 +6,7 @@ export const Services = () => {
     return (
         <section className='py-12 px-6'>
 
-            <h1 className='text-3xl font-extrabold mb-2 text-center'>Muestros Servicios</h1>
+            <h1 className='text-3xl font-extrabold mb-2 text-center'>Nuestros Servicios</h1>
             <p className="text-gray-300 mb-8 text-center">Descubre la gama de servicios que ofrecemos para mantenerte con un look impecable.</p>
 
             <div className="max-w-4xl mx-auto space-y-10 sm:px-6 lg:px-8">
