@@ -14,7 +14,7 @@ export const Navbar = () => {
                 <div className="relative flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={icon} className="h-8 mr-3" alt="Logo Barber Shop" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Barber Shop</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Barber Shop</span>
                     </Link>
 
                     <button

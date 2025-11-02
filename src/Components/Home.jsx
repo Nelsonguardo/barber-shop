@@ -1,11 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import icon from "../assets/img/barba.webp";
 import barberImage2 from '../assets/img/barber-image2.webp'
 import barberImage from '../assets/img/barber-image.webp'
 import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
 
+    const [loading, setLoading] = useState(true);
+
     const navigate = useNavigate();
+
+    useEffect(() => {
+        // Simula carga de datos o inicialización
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000); // 3 segundos de "carga"
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="flex flex-col items-center justify-center h-screen">
+                <img
+                    src={icon}
+                    alt="Cargando..."
+                    className="w-32 h-32 animate-pulse"
+                />
+            </div>
+        );
+    }
 
     return (
         <>
@@ -49,37 +72,37 @@ export const Home = () => {
                     </h1>
                     <div className='grid grid-cols-2 md:grid-cols-6 gap-4 py-8'>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg"
+                            <img className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
                                 src={barberImage}
                                 alt="Barber Shop"
                             />
@@ -98,14 +121,14 @@ export const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-8 max-w-6xl mx-auto">
                         <div>
                             <img
-                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg"
+                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage2}
                                 alt="Barber Shop"
                             />
                         </div>
                         <div>
                             <img
-                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg"
+                                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg transition-transform duration-300 hover:scale-125"
                                 src={barberImage2}
                                 alt="Barber Shop"
                             />
