@@ -7,7 +7,7 @@ export const AboutMe = () => {
         <div>
             <section className='py-6 px-6'>
                 <h1 className='text-3xl font-extrabold mb-2 text-center'>Sobre Mí</h1>
-                <p className='text-gray-300 mb-8 text-center'>Descubre la historia y la pasión detrás de cada corte.</p>
+                <p className='text-gray-300 text-center'>Descubre la historia y la pasión detrás de cada corte.</p>
             </section>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start p-8 rounded-lg">
