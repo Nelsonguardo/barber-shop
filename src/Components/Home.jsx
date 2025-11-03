@@ -46,9 +46,9 @@ export const Home = () => {
                             </strong>
                         </h1>
                         <div className='flex flex-col'>
-                            <p>Experimenta el arte del cuidado personal en un ambiente moderno y relajante.</p>
-                            <p>Nuestros expertos barberos están dedicados a realizar tu estilo personal con cortes precisos.</p>
-                            <p className="mb-4">Servicios de alta calidad para realzar tu confianza.</p>
+                            <p className='text-base leading-relaxed'>Experimenta el arte del cuidado personal en un ambiente moderno y relajante.</p>
+                            <p className='text-base leading-relaxed'>Nuestros expertos barberos están dedicados a realizar tu estilo personal con cortes precisos.</p>
+                            <p className='text-base leading-relaxed mb-4'>Servicios de alta calidad para realzar tu confianza.</p>
 
                             <button
                                 type="button"
