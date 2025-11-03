@@ -29,36 +29,70 @@ export const Navbar = () => {
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
-                    </button> 
+                    </button>
 
-                    <div className={`${isOpen ? 'absolute top-full left-0 w-full bg-[#221510] z-20' : 'hidden'} md:block md:w-auto md:static md:bg-transparent`} id="navbar-default">
-                        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-transparent">
+                    <div
+                        className={`${isOpen
+                                ? 'absolute top-full left-0 w-full bg-[#221510] z-20'
+                                : 'hidden'
+                            } md:block md:w-auto md:static md:bg-transparent`}
+                        id="navbar-default"
+                    >
+                        <ul className="font-medium flex flex-col md:flex-row md:items-center p-4 md:p-0 mt-4 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-transparent">
                             <li>
-                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" aria-current="page" to="/home">Inicio</NavLink>
+                                <NavLink
+                                    onClick={() => setIsOpen(false)}
+                                    className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 leading-none"
+                                    aria-current="page"
+                                    to="/home"
+                                >
+                                    Inicio
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent  md:p-0" to="/services">Servicios</NavLink>
+                                <NavLink
+                                    onClick={() => setIsOpen(false)}
+                                    className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 leading-none"
+                                    to="/services"
+                                >
+                                    Servicios
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/about">Sobre Mi</NavLink>
+                                <NavLink
+                                    onClick={() => setIsOpen(false)}
+                                    className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 leading-none"
+                                    to="/about"
+                                >
+                                    Sobre Mi
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink onClick={() => setIsOpen(false)} className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0" to="/contact">Contacto</NavLink>
+                                <NavLink
+                                    onClick={() => setIsOpen(false)}
+                                    className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 leading-none"
+                                    to="/contact"
+                                >
+                                    Contacto
+                                </NavLink>
                             </li>
-                            <li>
+                            <li className="flex items-center">
                                 <button
                                     type="button"
                                     id="book-appointment"
-                                    className="px-3 py-2 text-xs font-medium text-center text-white bg-[#D44211] hover:bg-[#bf3b0f] rounded-md transition-colors"
-                                    onClick={() => { setIsOpen(false); navigate('/book-appointment'); }}
+                                    className="px-4 py-[7px] text-base font-semibold text-white bg-[#D44211] hover:bg-[#bf3b0f] rounded-md transition-colors leading-none"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        navigate('/book-appointment');
+                                    }}
                                 >
-                                    <span className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0">Reservar Cita</span>
+                                    Reservar Cita
                                 </button>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <hr className="border-t-1 border-[#D44211]" />
+                    <hr className="border-t-1 border-[#D44211]" />
             </nav>
         </>
     )
